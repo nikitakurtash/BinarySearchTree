@@ -18,7 +18,7 @@ private:
 	};
 	Node<T>* root_;
 	Node<T>* iterativeSearchNode(const T& key) const;
-	void printNode(std::ostream& out, Node<T>* root) const;
+	void printNode(std::ostream& out, Node<T>* node, std::string indent, bool isLast) const;
 	int getCount(const Node<T>* node) const;
 	int getHeight(const Node<T>* node) const;
 	void inorderWalk(Node<T>* node) const;
